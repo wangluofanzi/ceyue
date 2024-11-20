@@ -1,0 +1,33 @@
+{
+  "log": {
+    "level": "info",
+    "output": "console"
+  },
+  "dns": {
+    "servers": [
+      "8.8.8.8",
+      "8.8.4.4"
+    ]
+  },
+  "outbounds": [
+    {
+      "type": "hysteria2",
+      "server": "66.112.213.53",
+      "server_port": 443,
+      "auth": {
+        "mode": "password",
+        "password": "dd904350a88393aa"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com"
+      },
+      "up_mbps": 10,
+      "down_mbps": 50,
+      "retry": {
+        "attempts": 3,
+        "delay": 2
+      }
+    }
+  ]
+}
